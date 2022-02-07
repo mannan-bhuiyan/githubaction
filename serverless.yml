@@ -1,0 +1,14 @@
+service: basic-serverless-lambda
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: main
+  region: us-east-1
+
+functions:
+  hello:
+    handler: src/handler.generateRandomNumber
+    events: 
+    - http: ANY {proxy+}
+    - http: ANY /
