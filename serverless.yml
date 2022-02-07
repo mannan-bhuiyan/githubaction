@@ -3,12 +3,18 @@ service: serverless-lambda
 provider:
   name: aws
   runtime: nodejs14.x
+  memorysize: 128
+  timeout: 15 
   stage: main
   region: us-east-1
+  apiGateway:
+  binaryMediaTypes:
+    - '*/*'
+
 
 functions:
   BJIT:
     handler: src/handler.generateRandomNumber
     events: 
-    - http: ANY  {proxy+}
-    - http: ANY /
+    - http: ANY{proxy+}
+    - http: ANY/
