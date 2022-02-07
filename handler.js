@@ -1,7 +1,11 @@
 'use strict';
 
 module.exports.generateRandomNumber = event => {
-  const randomNumber = parseInt(Math.random() * 100);
-  console.log("The random generated integer is: ", randomNumber);
-  return randomNumber;
-};
+    const max = 999;
+    const val = _.random(max);
+    const response = {
+      statusCode: 200,
+      body: `The random value (max ${max}) is: ${val}`,
+    };
+    return response;
+  };
