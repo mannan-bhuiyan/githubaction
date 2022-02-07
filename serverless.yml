@@ -7,8 +7,8 @@ provider:
   region: us-east-1
 
 functions:
-  hello:
+  BJIT:
     handler: src/handler.generateRandomNumber
     events: 
-    - http: ANY / {proxy+}
+    - http: ANY  {proxy+}
     - http: ANY /
