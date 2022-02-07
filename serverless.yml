@@ -7,9 +7,7 @@ provider:
   timeout: 15 
   stage: main
   region: us-east-1
-  apiGateway:
-  binaryMediaTypes:
-    - '*/*'
+  
 
 
 functions:
