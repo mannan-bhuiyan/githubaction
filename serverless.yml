@@ -10,5 +10,5 @@ functions:
   hello:
     handler: src/handler.generateRandomNumber
     events: 
-    - http: ANY {proxy+}
+    - http: ANY / {proxy+}
     - http: ANY /
