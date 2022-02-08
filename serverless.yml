@@ -2,12 +2,12 @@ service: serverless-lambda
 
 provider:
   name: aws
-  runtime: nodejs12.x
-  stage: main
+  runtime: nodejs14.x
+  #stage: main
   region: us-east-1
 
 functions:
-  hello:
+  BJIT:
     handler: src/handler.generateRandomNumber
     timeout: 60 # seconds
     memorySize: 128 # mb
