@@ -1,9 +1,9 @@
-service: serverless-lambda
+service: githubaction-lambda-session
 
 provider:
   name: aws
   runtime: nodejs14.x
-  #stage: main
+  stage: main
   region: us-east-1
 
 functions:
