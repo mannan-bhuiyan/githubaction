@@ -1,4 +1,4 @@
-name: Deploy Lambda
+name: Deploy Lambda #Name of action
 # Triggers the workflow on push request for the main branch
 on:
   push:

@@ -9,5 +9,5 @@ provider:
 functions:
   BJIT:
     handler: handler.generateRandomNumber
-    timeout: 60 # seconds
-    memorySize: 128 # mb
+    #timeout: 30 # seconds
+    #memorySize: 128 # mb
